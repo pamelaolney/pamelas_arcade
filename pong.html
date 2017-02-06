@@ -1,1 +1,23 @@
-<h1>Pong World</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pong World</title>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script type="text/javascript">
+    var canvas;
+    var canvasContext;
+    // this code won't activate until it has finished loading
+    window.onload = function() {
+      console.log("Hello World");
+      canvas = document.getElementById('gameCanvas');
+      canvasContext = canvas.getContext('2d');
+      canvasContext.fillStyle = 'black';
+      canvasContext.fillRect(0,0,canvas.width,canvas.height);
+    }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
